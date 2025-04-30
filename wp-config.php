@@ -101,8 +101,8 @@ define('WP_DEBUG', false);
 //     $_SERVER['HTTPS'] = 'on'; // <== force WordPress to treat it as HTTPS
 // }
 
-define('WP_HOME', 'tarumt-grad-hub-lb-1-1419453311.us-east-1.elb.amazonaws.com/tarumtgradhub');
-define('WP_SITEURL', 'tarumt-grad-hub-lb-1-1419453311.us-east-1.elb.amazonaws.com/tarumtgradhub');
+#define('WP_HOME', 'tarumt-grad-hub-lb-1-1419453311.us-east-1.elb.amazonaws.com/tarumtgradhub');
+#define('WP_SITEURL', 'tarumt-grad-hub-lb-1-1419453311.us-east-1.elb.amazonaws.com/tarumtgradhub');
 
 
 
