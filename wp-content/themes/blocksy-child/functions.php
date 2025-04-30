@@ -9,12 +9,13 @@ add_action( 'wp_enqueue_scripts', function () {
 });
 
 function rewrite_asset_urls_to_s3($url) {
-    // Define your CDN or S3 base URL
-    $cdn_base = 'https://tarumt-grad-hub-bucket.s3.us-east-1.amazonaws.com'; // or your S3 public URL
+    $cdn_base = 'https://tarumt-grad-hub-bucket.s3.us-east-1.amazonaws.com';
 
-    // Only replace for wp-includes and wp-content assets
     if (strpos($url, '/wp-includes/') !== false || strpos($url, '/wp-content/') !== false) {
-        $url = $cdn_base . parse_url($url, PHP_URL_PATH);
+        $parsed = parse_url($url);
+        if (isset($parsed['path'])) {
+            $url = $cdn_base . $parsed['path'];
+        }
     }
 
     return $url;
