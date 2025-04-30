@@ -24,7 +24,7 @@
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('WP_CACHE', true);
-define( 'WPCACHEHOME', 'tarumt-grad-hub-lb-1-1419453311.us-east-1.elb.amazonaws.com\tarumtgradhub\wp-content\plugins\wp-super-cache/' );
+define( 'WPCACHEHOME', 'tarumt-grad-hub-lb-1-1419453311.us-east-1.elb.amazonaws.com/tarumtgradhub/wp-content/plugins/wp-super-cache/' );
 define('DB_NAME', 'tarumtgradhub');
 
 /** Database username */
