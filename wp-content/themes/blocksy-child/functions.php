@@ -9,7 +9,7 @@ add_action( 'wp_enqueue_scripts', function () {
 });
 
 function rewrite_asset_urls_to_s3($url) {
-    $cdn_base = 'https://tarumt-grad-hub-bucket.s3.us-east-1.amazonaws.com/ccb_assignment';
+    $cdn_base = 'https://tarumt-grad-hub-bucket-v2.s3.us-east-1.amazonaws.com/tarumtgradhub';
 
     // Prevent rewriting if it's already an S3 URL
     if (strpos($url, $cdn_base) !== false) {
